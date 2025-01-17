@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Calculadora Científica</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="calculator">
+
+    <!-- VISOR PRINCIPAL -->
+    <div class="calculator-display" id="calculator-display">0</div>
+
+    <!-- FILA DE FUNCIONES CIENTÍFICAS 1 -->
+    <div class="calculator-buttons scientific-functions">
+      <button class="btn scientific" data-value="sin">sin</button>
+      <button class="btn scientific" data-value="cos">cos</button>
+      <button class="btn scientific" data-value="tan">tan</button>
+      <button class="btn scientific" data-value="ln">ln</button>
+      <button class="btn scientific" data-value="log">log</button>
+    </div>
+
+    <!-- FILA DE FUNCIONES CIENTÍFICAS 2 -->
+    <div class="calculator-buttons scientific-functions">
+      <button class="btn scientific" data-value="^2">x²</button>
+      <button class="btn scientific" data-value="^3">x³</button>
+      <button class="btn scientific" data-value="sqrt">√x</button>
+      <button class="btn scientific" data-value="inv">1/x</button>
+      <button class="btn scientific" data-value="sign">±</button>
+    </div>
+
+    <!-- BOTONERA BÁSICA -->
+    <div class="calculator-buttons">
+      <!-- 1ERA FILA -->
+      <button class="btn" data-value="7">7</button>
+      <button class="btn" data-value="8">8</button>
+      <button class="btn" data-value="9">9</button>
+      <button class="btn operator" data-value="/">÷</button>
+
+      <!-- 2DA FILA -->
+      <button class="btn" data-value="4">4</button>
+      <button class="btn" data-value="5">5</button>
+      <button class="btn" data-value="6">6</button>
+      <button class="btn operator" data-value="*">×</button>
+
+      <!-- 3RA FILA -->
+      <button class="btn" data-value="1">1</button>
+      <button class="btn" data-value="2">2</button>
+      <button class="btn" data-value="3">3</button>
+      <button class="btn operator" data-value="-">−</button>
+
+      <!-- 4TA FILA -->
+      <button class="btn" data-value="0">0</button>
+      <button class="btn" data-value=".">.</button>
+      <button class="btn operator" data-value="+">+</button>
+      <button class="btn equal" data-value="=">=</button>
+
+      <!-- FILA EXTRA BOTÓN CLEAR -->
+      <button class="btn clear" data-value="C">C</button>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

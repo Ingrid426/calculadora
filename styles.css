@@ -1,0 +1,80 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.calculator {
+  background-color: #333;
+  border-radius: 10px;
+  padding: 20px;
+  width: 270px; /* un poco más ancha para acomodar más botones */
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  position: relative;
+}
+
+.calculator-display {
+  background-color: #eee;
+  color: #000;
+  padding: 10px;
+  font-size: 1.4rem;
+  text-align: right;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  min-height: 32px;
+}
+
+/* BOTONERAS */
+.calculator-buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 5px;
+  margin-bottom: 5px;
+}
+
+/* FILAS DE FUNCIONES CIENTÍFICAS */
+.scientific-functions {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 5px;
+  margin-bottom: 5px;
+}
+
+.btn {
+  background-color: #fafafa;
+  border: none;
+  border-radius: 5px;
+  height: 40px;
+  font-size: 1rem;
+  cursor: pointer;
+  outline: none;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.operator {
+  background-color: #ff9f43; /* naranja para operadores */
+  color: #fff;
+}
+
+.equal {
+  background-color: #00b894; /* verde para el botón = */
+  color: #fff;
+}
+
+.clear {
+  background-color: #d63031; /* rojo para C */
+  color: #fff;
+  grid-column: span 4; 
+}
+
+.scientific {
+  background-color: #576574; /* gris azulado para funciones científicas */
+  color: #fff;
+}
